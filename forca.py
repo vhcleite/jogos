@@ -12,9 +12,10 @@ def jogar():
 
     while(not acertou and not enforcou):
         chute = input("Digite uma letra: ")
+        chute = chute.strip()
         index = 0
         for letra in palavra_secreta:
-            if letra == chute:
+            if letra.upper() == chute.upper():
                 print("Encoutrou '{}' na posição '{}'".format(letra, index))
             index = index + 1
 
