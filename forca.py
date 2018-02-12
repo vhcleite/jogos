@@ -29,7 +29,7 @@ def jogar():
                 enforcou = True
                 print("ENFORCOU")
 
-        if (palavra_acertada.count("_") == 0):
+        if ("_" not in palavra_acertada):
             print("Você VENCEU  ")
             acertou = True
 
